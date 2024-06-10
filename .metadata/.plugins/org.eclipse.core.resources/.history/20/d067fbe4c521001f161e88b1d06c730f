@@ -1,0 +1,56 @@
+package com.hackerrank.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class DataEntryAutomation {
+	
+
+    public static void fillDateOfBirth(WebDriver driver, String pageUrl) {
+       //implement
+    	
+    	
+      WebElement month = driver.findElement(By.xpath("//select[@id='month']"));
+       Select select = new Select(month);
+       select.selectByVisibleText("July");
+       
+       WebElement day = driver.findElement(By.id("day"));
+       Select select1 = new Select(day);
+       select1.selectByVisibleText("11");
+       
+       WebElement year = driver.findElement(By.id("year"));
+       Select select2 = new Select(year);
+       select2.selectByVisibleText("1990");
+       
+       
+       
+    }
+
+    public static void answerQuestions(WebDriver driver, String pageUrl) {
+        //implement
+    	//input[@value='Java']
+    	
+    	WebElement programming = driver.findElement(By.xpath("//input[@value='Java']"));
+    	programming.click();
+    	
+    	WebElement programming1 = driver.findElement(By.xpath("//input[@value='Python']"));
+    	programming1.click();
+    	
+    	
+    	WebElement Operating = driver.findElement(By.xpath("//input[@value='Linux']"));
+    	Operating.click();
+    	
+    	
+    	WebElement Operating1 = driver.findElement(By.xpath("//input[@value='Mac OSX']"));
+    	Operating1.click();
+    	
+    	
+    	WebElement IDE = driver.findElement(By.xpath("//input[@value='IntelliJ IDEA']"));
+    	IDE.click();
+    	
+    	
+    	
+    }
+}

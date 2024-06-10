@@ -1,0 +1,33 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class TessPage  extends BasePage{
+
+	
+	
+	
+	public TessPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver,this);
+		// TODO Auto-generated constructor stub
+	}
+	
+	////a[text()='Desiree Fitness Tee']"
+	
+	@FindBy(xpath = "//a")
+	WebElement productSelection;
+	
+	public void SelectProduct(String product) {
+		
+		
+		WebElement selection = driver.findElement(By.xpath("//a[text()='" + product + "']"));
+		selection.click();
+	}
+
+}

@@ -1,0 +1,74 @@
+package projectp;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NewWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Barclays_switch_Workspace\\Brandnew\\driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.worldometers.info/world-population/");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		//String a=driver.getTitle();
+		System.out.println(driver.getTitle());
+		
+		/*
+		 * while(true) { List<WebElement> ele = driver.findElements(By.xpath(
+		 * "//div[@class='maincounter-number']/span[@class='rts-counter']")); try {
+		 * Thread.sleep(5000); for(WebElement e :ele) { System.out.println(e.getText());
+		 * }
+		 * 
+		 * 
+		 * } catch (InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 * 
+		 * break;
+		 * 
+		 * }
+		 */
+		
+		
+		while(true)
+		{
+		List<WebElement> ele1 = driver.findElements(By.xpath("//div[@class='col-sm-6 col-counters'][1]"));
+		
+		for(WebElement e :ele1)
+		{
+			System.out.println(e.getText());
+		}
+		
+		
+	
+		
+		}
+		
+		
+		
+
+		/*
+		 * while(true) { List<WebElement> ele2 =
+		 * driver.findElements(By.xpath("//div[@class='col-sm-6 col-counters']/div/div")
+		 * ); try { Thread.sleep(5000); for(WebElement e :ele2) {
+		 * System.out.println(e.getText()); }
+		 * 
+		 * 
+		 * } catch (InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 * 
+		 * break;
+		 * 
+		 * }
+		 */
+		
+
+	}
+
+}

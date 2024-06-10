@@ -1,0 +1,17 @@
+package com.hackerrank.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DataEntryAutomation {
+
+    public static void fillDateOfBirth(WebDriver driver, String pageUrl) {
+       //implement
+
+       Select select = new Select(driver);
+    }
+
+    public static void answerQuestions(WebDriver driver, String pageUrl) {
+        //implement
+    }
+}

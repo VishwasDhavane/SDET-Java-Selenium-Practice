@@ -1,0 +1,43 @@
+package interviewpractice;
+
+public class Second {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//to check weather given strings are anagrm or not
+		
+		String s1="Listen";
+		String s2="Silent";
+		String a=s1.toLowerCase();
+		String b= s2.toLowerCase();
+		char[] ch =a.toCharArray();
+		char[] cv= b.toCharArray();
+		int count=0;
+		
+		for(int i=0;i<ch.length;i++)
+		{
+			for(int j=0;j<ch.length;j++)
+			{
+				if(ch[i]==ch[j])
+				{
+					count++;
+				}
+			}
+		}
+		
+		System.out.println(count);
+		
+		if(s1.length()==count)
+		{
+			System.out.println("it is an anagrma");
+		}
+		
+		else
+		{
+			System.out.println("not an anagarma");
+		}
+
+	}
+
+}

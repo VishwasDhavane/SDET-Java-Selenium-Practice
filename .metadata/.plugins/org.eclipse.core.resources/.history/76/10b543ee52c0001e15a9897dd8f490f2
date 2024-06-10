@@ -1,0 +1,51 @@
+package arraypractice;
+
+import java.util.Arrays;
+
+public class Practice_13 {
+
+	public static void main(String[] args) {
+		
+ //Write a Java program to remove duplicate elements from an array?
+		
+		
+		int[] no = new int[]  {4, 3, 2, 4, 9, 2};
+		int un=no.length;
+		
+		System.out.println("with Duplicates");
+		
+		for(int i=0;i<no.length;i++)
+		{
+			System.out.println(no[i] + "\t");
+		}
+		
+		for(int i=0;i<no.length;i++)
+		{
+			for(int j=i+1;j<no.length;j++)
+			{
+				if(no[i]==no[j])
+				{
+					no[j]=no[un-1];
+					un--;
+					j--;
+					
+				}
+			}
+		}
+		
+		int[] duplicate= Arrays.copyOf(no, un);
+		
+		System.out.println("without duplicates");
+		
+		for(int m=0;m<duplicate.length;m++)
+		{
+			System.out.println(duplicate[m] +  "\t");
+		}
+		
+		
+		
+	
+
+	}
+
+}

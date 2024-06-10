@@ -1,0 +1,14 @@
+package javapractice;
+
+public class Practice_18 {
+
+	public static void main(String[] args) {
+		//How do you find first repeated and non-repeated character in the given string in Java
+		
+		String str="JavaConceptOfTheDay";
+		char[] ch =str.toCharArray();
+		
+		
+	}
+
+}

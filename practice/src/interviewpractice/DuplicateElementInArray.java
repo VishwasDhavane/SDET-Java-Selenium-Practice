@@ -1,0 +1,40 @@
+package interviewpractice;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class DuplicateElementInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] a = new int[] {4,5,6,6,7,4,8};
+		HashMap<Integer,Integer> map = new HashMap<Integer, Integer>();
+		
+		for(int b : a)
+		{
+			if(map.containsKey(b))
+			{
+				map.put(b,map.get(b)+1);
+			}
+			else
+			{
+				map.put(b, 1);
+			}
+		}
+		
+		    Set<Entry<Integer,Integer>> c=map.entrySet();
+		    
+		    for(Entry<Integer,Integer> d : c)
+		    {
+		    	if(d.getValue()>1)
+		    	{
+		    		System.out.println("the duplicate key is "+d.getKey()+"the vale is "+d.getValue());
+		    	}
+		    }
+		    
+
+	}
+
+}

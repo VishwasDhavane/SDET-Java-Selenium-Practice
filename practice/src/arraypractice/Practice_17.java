@@ -1,0 +1,59 @@
+package arraypractice;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Practice_17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//How to merge two sorted or unsorted arrays into single sorted array without duplicates in Java?
+		
+		int[] a = new int[] {7, -5, 3, 8, -4, 11, -19, 21};
+		int[] b= new int[] {6, 13, -7, 0, 11, -4, 3, -5};
+		
+		int[] with = new int[a.length+b.length];
+		int i=0;
+		int j=0;
+		int k=0;
+		
+		while(i<a.length)
+		{
+			with[k]=a[i];
+			k++;
+			i++;
+		}
+		
+		while(j<b.length)
+		{
+			with[k]=b[j];
+			k++;
+			j++;
+		}
+		
+		
+		HashSet<Integer> set = new HashSet<Integer>();
+		
+		for(int m=0;m<with.length;m++)
+		{
+			set.add(with[m]);
+		}
+		
+		Iterator<Integer> it =  set.iterator();
+		
+		int[] without = new int[set.size()];
+		
+		int l=0;
+		
+		while(it.hasNext())
+		{
+			without[l]=it.next();
+			l++;
+		}
+         Arrays.sort(without);
+         System.out.println(Arrays.toString(without));
+
+	}
+
+}

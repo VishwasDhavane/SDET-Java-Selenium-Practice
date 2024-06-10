@@ -1,0 +1,30 @@
+package interviewpractice;
+
+public class PalindroneString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "madam";
+		
+	    String b= null;
+	    
+	    for(int i=s.length()-1;i>=0;i--)
+	    {
+	    	b=s.charAt(i) + " ";
+	    }
+	    
+	    System.out.println(b);
+		if(b.equals(s))
+		{
+			System.out.println("its a plaindrone");
+		}
+		else
+		{
+			System.out.println("its  not a plaindrone");
+		}
+		
+
+	}
+
+}

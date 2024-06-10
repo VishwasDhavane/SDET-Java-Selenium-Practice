@@ -1,0 +1,26 @@
+package interviewpractice;
+
+public class ThirdLargestNumberInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+		
+		int[] a = new int[] {3,5,6,45,8,34,7};
+		
+		int third =a[0];
+		
+		for(int i=1;i<a.length;i++)
+		{
+			if(a[i]>third)
+			{
+				third=a[i];
+			}
+		}
+		
+		System.out.println(third);
+		
+		
+	}
+
+}

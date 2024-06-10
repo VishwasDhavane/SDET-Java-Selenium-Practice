@@ -1,0 +1,29 @@
+package javapractice;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Practice_19 {
+
+	public static void main(String[] args) throws IOException {
+		// Write a Java program to append a given string to a text file?
+		
+		FileWriter fileWriter = new FileWriter("C:\\Users\\hp\\OneDrive\\Desktop\\Test.txt", true);
+		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+		PrintWriter printwriter = new PrintWriter(bufferedWriter);
+		printwriter.println();
+		printwriter.println("awesome is vishwas is awesome ");
+		System.out.println("done");
+		printwriter.close();
+        bufferedWriter.close();
+        fileWriter.close();
+		 
+		
+
+
+
+	}
+
+}

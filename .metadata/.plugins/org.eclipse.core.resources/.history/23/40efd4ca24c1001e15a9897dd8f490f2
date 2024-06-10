@@ -1,0 +1,29 @@
+package arraypractice;
+
+import java.util.Arrays;
+
+public class Practice_24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int[] a = new int[] {1, 0, 2, 2, 0, 2, 1, 2, 1, 1, 2, 0};
+		 int[] b= new int[a.length];
+		 int count=0;
+		 
+		 for(int i=0;i<a.length;i++)
+		 {
+			 if(a[i]==1 && a[i]==2)
+			 {
+				 b[count]=a[i];
+				 count++;
+			 }
+		 }
+		 
+		 System.out.println(Arrays.toString(b));
+		 
+		 
+		 
+
+	}
+
+}

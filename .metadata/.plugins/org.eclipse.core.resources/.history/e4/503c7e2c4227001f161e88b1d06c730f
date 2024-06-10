@@ -1,0 +1,33 @@
+package leetcodepractice;
+
+import java.util.Arrays;
+
+public class ProductOfAnArrayExceptSelf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] n= new int[] {1,2,3,4};
+		int[] s= new int[n.length];
+		int count=0;
+		int temp=0;
+		
+		
+		for(int i=0;i<n.length;i++)
+		{
+			
+		
+		for(int j=1;j<n.length;j++)
+		{
+			temp=temp *n[j];
+			s[count]=temp;
+			count++;
+		}
+			
+		}
+		
+		System.out.println(Arrays.toString(s));
+
+	}
+
+}
