@@ -1,0 +1,21 @@
+package javapractice;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		
+		
+		try
+		{
+			int[] a = new int[] {1,2,3};
+			
+		    System.out.println(a[5]);
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("array Index out of bound");
+		}
+
+	}
+
+}

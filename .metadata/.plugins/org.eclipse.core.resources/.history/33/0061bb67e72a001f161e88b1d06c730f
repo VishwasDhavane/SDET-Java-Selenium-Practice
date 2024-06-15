@@ -1,0 +1,19 @@
+package interfaceexamples;
+
+public class Dog implements Animal,Pet{
+
+	@Override
+	public void makeSound() {
+		System.out.println("Child class");
+		
+	}
+	
+	public void makerun()
+	{
+		System.out.println("Child class method");
+	}
+	
+	
+	
+
+}

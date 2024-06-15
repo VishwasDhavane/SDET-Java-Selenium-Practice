@@ -58,7 +58,6 @@ INDEX VERSION 1.131+D:\Barclays_switch_Workspace\.metadata\.plugins\org.eclipse.
 2481826619.index
 325225002.index
 2948152777.index
-1755401707.index
 3422735444.index
 564818988.index
 1004368903.index
