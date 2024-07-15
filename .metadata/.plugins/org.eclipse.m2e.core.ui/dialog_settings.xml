@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Barclays_switch_Workspace\practice\src"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,14 +45,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="TestNGPractice"/>
-			<item value="Brandnew"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="TestNGPractice"/>
-			<item value="Brandnew"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,6 +70,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\hp\Downloads\UBS"/>
 			<item value="C:\Users\hp\Downloads\demoTest (1)"/>
 		</list>
 		<list key="projectNameTemplate">

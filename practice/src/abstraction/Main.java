@@ -9,6 +9,10 @@ public class Main   {
 		a.makesound();
 		a.sleep();
 		
+		AbstractClass d = new Child();
+		d.sleep();
+		d.makesound();
+		
 		
 		
 

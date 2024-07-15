@@ -6,7 +6,7 @@ public interface Pet {
 	
 	public static void getpet()
 	{
-		System.out.println("second interface default method");
+		System.out.println("second interface static method");
 	}
 
 }

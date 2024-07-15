@@ -5,7 +5,7 @@ public interface Animal {
 	  void makeSound();
 	  
 	  default void sleep() {
-	        System.out.println("Interface method sleep");    
+	        System.out.println("Interface default method sleep");    
 	        
 	  }
 	  public static  void eat() {
